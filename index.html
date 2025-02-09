@@ -226,7 +226,7 @@
             checkedOptions.forEach(option => {
                 if (option.value === "complementary") {
                     const complementaryDNA = dna.split('').map(base => complementMap[base] || '?').join('');
-                    resultHTML += `<p><strong>Complementary DNA:</strong> ${complementaryDNA}</p>`;
+                    resultHTML += `<p><strong>Complementary:</strong> ${complementaryDNA}</p>`;
                 }
                 if (option.value === "mrna") {
                     const mrna = dna.split('').map(base => mrnaMap[base] || '?').join('');
